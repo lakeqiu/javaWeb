@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+   <bean id="CategoryDao" class="com.lakeqiu.store.dao.impl.CategoryDaoImpl"/>
+   <bean id="UserDao" class="com.lakeqiu.store.dao.impl.UserDaoImpl"/>
+   <bean id="ProductDao" class="com.lakeqiu.store.dao.impl.ProductDaoImpl"/>
+   <bean id="OrderDao" class="com.lakeqiu.store.dao.impl.OrderDaoImpl"/>
+</beans>

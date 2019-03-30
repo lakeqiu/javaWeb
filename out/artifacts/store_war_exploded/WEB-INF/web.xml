@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>com.lakeqiu.store.web.filter.EncodingFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    
+    <servlet>
+        <servlet-name>UserServlet</servlet-name>
+        <servlet-class>com.lakeqiu.store.web.servlet.UserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserServlet</servlet-name>
+        <url-pattern>/UserServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>IndexServlet</servlet-name>
+        <servlet-class>com.lakeqiu.store.web.servlet.IndexServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>IndexServlet</servlet-name>
+        <url-pattern>/IndexServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>CategoryServlet</servlet-name>
+        <servlet-class>com.lakeqiu.store.web.servlet.CategoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CategoryServlet</servlet-name>
+        <url-pattern>/CategoryServlet</url-pattern>
+    </servlet-mapping>
+
+ <!--   <filter>
+        <filter-name>CategoryFilter</filter-name>
+        <filter-class>com.lakeqiu.store.web.filter.CategoryFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CategoryFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>-->
+    
+    <servlet>
+        <servlet-name>ProductServlet</servlet-name>
+        <servlet-class>com.lakeqiu.store.web.servlet.ProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductServlet</servlet-name>
+        <url-pattern>/ProductServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>CartServlet</servlet-name>
+        <servlet-class>com.lakeqiu.store.web.servlet.CartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CartServlet</servlet-name>
+        <url-pattern>/CartServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>OrderServlet</servlet-name>
+        <servlet-class>com.lakeqiu.store.web.servlet.OrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrderServlet</servlet-name>
+        <url-pattern>/OrderServlet</url-pattern>
+    </servlet-mapping>
+
+    <filter>
+        <filter-name>PriviledgeFilter</filter-name>
+        <filter-class>com.lakeqiu.store.web.filter.PriviledgeFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>PriviledgeFilter</filter-name>
+        <url-pattern>/jsp/order_info.jsp</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>PriviledgeFilter</filter-name>
+        <url-pattern>/jsp/order_list.jsp</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>PriviledgeFilter</filter-name>
+        <url-pattern>/jsp/cart.jsp</url-pattern>
+    </filter-mapping>
+    
+    <servlet>
+        <servlet-name>AdminCategoryServlet</servlet-name>
+        <servlet-class>com.lakeqiu.store.web.servlet.AdminCategoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminCategoryServlet</servlet-name>
+        <url-pattern>/AdminCategoryServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminProductServlet</servlet-name>
+        <servlet-class>com.lakeqiu.store.web.servlet.AdminProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminProductServlet</servlet-name>
+        <url-pattern>/AdminProductServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AdminOrderServlet</servlet-name>
+        <servlet-class>com.lakeqiu.store.web.servlet.AdminOrderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminOrderServlet</servlet-name>
+        <url-pattern>/AdminOrderServlet</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>CodeServlet</servlet-name>
+        <servlet-class>com.lakeqiu.store.web.servlet.CodeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CodeServlet</servlet-name>
+        <url-pattern>/CodeServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
